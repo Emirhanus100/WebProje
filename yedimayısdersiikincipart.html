@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title></title>
+        <script type="text/javascript">
+            function karsilastir()
+            {
+            var t1= document.getElementById("txt1").value; // idsii txt1 eleman demek
+            alert("text1 getElementById değeri:" +t1);
+            var t2 = txt1.value;
+            alert("text1 direkt değeri:" +t2);
+            // var t3 = document.Ntxt2.value; çalışmadı
+            // var t3 = Ntxt2.value; // ismen erişim sağlamak istiyorsan form içerisine yazmalısın. çalışmadı
+            var t3 = document.frm.Ntxt2.value;
+            alert("text1 form/name değeri:" +t3);
+            }
+        </script>
+    <script>
+        /*
+        var sayi1 = prompt("1.Sayıyı Giriniz.");
+        var sayi2 = prompt("2.Sayıyı Giriniz.");
+        var toplam = sayi1+sayi2;
+    alert("Sayıların Toplamı:" + toplam); // javada var diye tanımlıyoruz. değişkenleri
+
+    var toplam2 = Number(sayi1)+Number(sayi2);
+    alert("2.toplam:" + toplam2);
+    /*
+    </script>   
+    </head>
+    <body>
+        <form action="/" method="post" name="frm"></form>
+        <input type="text" id="txt1" />
+        <input  type="text" id="txt2" name="Ntxt2" />
+        <input  type="button" value="Eşit mi ?" onclick="karsilastir()" />
+    </form>
+        <script>
+            /*
+            alert("Body toplam2:" + toplam2);
+            */
+        </script>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function goster()
+            {
+                var divler=document.getElementsByTagName("div");
+                divler[0].innerHTML="1. divv içeriği değişti";
+                divler[1].style.fontWeight = "bold";
+                divler[1].style.color="white";
+                divler[1].style.backgroundColor= "red";
+                //alert(divler.length);
+                for (var i = 0; i < divler.length; i++) {
+                    divler[i].innerHTML=i + ".Div Degisti.";
+                    
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div id="div1"> 
+            1.div
+        </div>
+        <div>
+            2.div
+        </div>
+        <div>
+            3.div
+         </div>  
+         <div>
+            4.div
+         </div>  
+         <input type="buttn" value="Goster" onclick="goster()"/>
+
+    </body>
+</html>
