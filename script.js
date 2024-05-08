@@ -1,4 +1,4 @@
-// IMAGE SLIDER
+// Resim Kaydırıcı
 
 const Resimler = document.querySelectorAll(".sliderKuşResimleri img");
 let slideIndex = 0;
