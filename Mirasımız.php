@@ -1,29 +1,27 @@
 <!DOCTYPE html>
 <head>
-
-<title>Hakkında Ekrani</title>
-<link rel="stylesheet" type="text/css" href="Mmirasımız.css">
-<script src="script.js" defer></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<title>Şehrim Ekrani</title>
+<link rel="stylesheet" a href="Mirasımız.css">
 </head>
 <body>
-<div class="BAŞLIK">
-        <div class="LOGOTASARIM">
-        <p>MİTA .</p>
-        </div>
-        <div class="Menü">
-            <span class="icon"><ion-icon name="menu"></ion-icon></span>
-            <ul>
-                <li><a href="LoginEkranı.php" class="link active">ANA SAYFA</a></li>
-                <li><a href="Hakkında.php" class="link active">HAKKINDA</a></li>
-                <li><a href="İlgialanı.php" class="link active">İLGİ ALANI</a></li>
-                <li><a href="Mmirsaımız.php" class="link active">MALATYA'NIN MİRASI</a>
-            </ul>
-        </div>
-    </div>
-<div class="HakAna">
+  <nav>
+        <ul class="sidebar">    
+        <li onclick=hideSidebar()><a href='#'><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href='Şehrim.php'>Ana Sayfa</a></li>
+        <li><a href='HAKKINDA.php'>Hakkında</a></li>
+        <li><a href='iilgialanı.php'>İlgi Alanı</a></li>
+        <li><a href='Mirasımız.php'>MALATYA'NIN MİRASI</a></li>
+</ul>
+<ul>
+        <li><a href='#'>MİTA</a></li>
+        <li class="hideOnMobile"><a href='Şehrim.php'>Ana Sayfa</a></li>
+        <li class="hideOnMobile"><a href='HAKKINDA.php'>Hakkında</a></li>
+        <li class="hideOnMobile"><a href='iilgialanı.php'>İlgi Alanı</a></li>
+        <li class="hideOnMobile"><a href='Mirasımız.php'>MALATYA'NIN MİRASI</a></li>
+        <li onclick=showSidebar()><a href='#'><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+</ul>
+  </nav>
+  <div class="HakAna">
     <input type="checkbox" id="chk" aria-hidden="true"> 
     <div class="Hakkındaİçerik">
     <h1 align="center">ARSLANTEPE  HÖYÜĞÜ</h1>   
@@ -53,3 +51,15 @@
 </tr>
 </div>
 </div>
+  <script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+    }
+    </script>
+  </body>
+</html>

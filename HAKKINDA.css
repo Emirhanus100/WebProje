@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    min-height: 100vh;
+    background-image: url(malatya2.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    font-family: 'Segoe UI','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+nav a:hover{
+    background-color: #f0f0f0;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+
+#chk{
+    display: none;
+}
+.HakAna
+{ margin-left: 250px;
+    margin-top: 120px;
+    margin-top: 100px;
+    width: 1000px;
+    height: 750px;
+    background: red;
+    overflow: hidden;
+    background: linear-gradient(to bottom, white, white, white);
+    border-radius: 35px;
+    box-shadow: 5px 20px 50px #000;
+    display: flex;
+    overflow-y: auto;
+}
+::-webkit-scrollbar{
+width: 15px;
+}
+::-webkit-scrollbar-track{
+background: #d1e5ff;
+border-radius: 35px;
+}
+
+::-webkit-scrollbar-thumb{
+background: linear-gradient(#966022,#966022);
+border-radius: 35px;
+}
+
+.Hakkındaİçerik
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    }
+
+    .sliderKuşResimleri{
+        position: relative;
+        width: 250px;
+        margin: auto;
+        overflow: hidden;
+    }
+    .sliderKuşResimleri img{
+        width: 250px;
+        display: none;
+    }
+
+    img.displaySlide{
+        display: block;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    .sliderKuşResimleri button{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1rem;
+        padding: 10px 15px;
+        background-color: hsla(0, 0%, 0%, 0.5);
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    .Onceki{
+        left: 0;
+    }
+    .Sonraki{
+        right: 0;
+    }
+
+
+
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+}
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
