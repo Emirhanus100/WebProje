@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-image: url(malatya2.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    font-family: 'Segoe UI','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+nav a:hover{
+    background-color: #f0f0f0;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+
+#chk{
+    display: none;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+    }
+    ::-webkit-scrollbar-track{
+    background: #d1e5ff;
+    border-radius: 35px;
+    }
+    
+    ::-webkit-scrollbar-thumb{
+    background: linear-gradient(#966022,#966022);
+    border-radius: 35px;
+    }
+#chk{
+    display: none;
+}
+.HakAna
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    margin-left: 250px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 35px 35px rgba(0, 0, 0, 0.1);
+}
+
+    .HakAna .solpanel{
+        position: relative;
+        background: #302b63;
+        padding: 40px;
+    }
+    .HakAna .sagpanel{
+        position: relative;
+        background: #fff;
+        padding: 40px;
+    }
+    .profilyazısı{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .profilyazısı p{
+        color: white;
+    }
+    .profilyazısı .resimpro{
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border-radius: 10%;
+        overflow: hidden;
+
+    }
+    .profilyazısı .resimpro img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: gray;
+      }
+      
+      .profilyazısı:hover .overlay {
+        opacity: 1;
+      }
+      .overlay-text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+    .profilyazısı h2{
+        color: #fff;
+        font-size: 1.5em;
+        margin-top: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 600;
+        line-height: 1.4em;
+    }
+    .profilyazısı h2 span{
+        font-size: 0.8em;
+        font-weight: 300;
+    }
+    .iletişim{
+    padding-top: 40px;
+    }
+    .iletişim p{
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+    .başlık{
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+    .iletişim ul{        color: #fff;
+
+        position: relative;
+    }
+    .iletişim ul li{
+        position: relative;
+        list-style: none;
+        margin: 10px 0;
+        cursor: pointer;
+    }
+    .iletişim ul li .icon{
+        display: inline-block;
+        width: 30px;
+        font-size: 18px;
+        color: #03a9f4;
+    }
+    .iletişim ul li span{
+        color: #fff;
+        font-weight: 300;
+    }
+    .yetenekler p{
+        color: #fff;
+    }
+    .yetenekler ul li {
+        display: flex;
+        margin-bottom: 10px;
+        color: #b1eaff;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .yetenekler ul li .programlamadili{
+        width: 25%;
+      }
+      .yetenekler ul li .ilerlemeyüzdesi{
+        width: 60%;
+        margin: 0 5px;
+        height: 5px;
+        background: #009fd9;
+        position: relative;
+      }
+      .yetenekler ul li .ilerlemeyüz{
+        width: 15%;
+      }
+      .yetenekler ul li .ilerlemeyüzdesi span{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background: #fff;
+      }
+      .Tecrübe{
+        padding-top: 40px;
+        }
+        .başlık2{
+            color: #302b63;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+        .Tecrübe ul{
+            position: relative;
+        }
+        .Tecrübe ul li{
+            position: relative;
+            list-style: none;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+        .Tecrübe ul li .icon{
+            display: inline-block;
+            width: 30px;
+            font-size: 18px;
+            color: #03a9f4;
+        }
+        .Tecrübe ul li span{
+            color: #000;
+            font-weight: 300;
+        }
+        .Diller p{
+            color: #302b63;
+        }
+        .Diller ul li {
+            display: flex;
+            margin-bottom: 10px;
+            color: #000;
+            justify-content: space-between;
+            align-items: center;
+          }
+          .Diller ul li .programlamadili{
+            width: 25%;
+          }
+          .Diller ul li .ilerlemeyüzdesi{
+            width: 60%;
+            margin: 0 5px;
+            height: 5px;
+            background: #009fd9;
+            position: relative;
+          }
+          .Diller ul li .ilerlemeyüz{
+            width: 15%;
+          }
+          .Diller ul li .ilerlemeyüzdesi span{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background: #c00c0c;
+          }
+    @media(max-width: 1000px){
+        .hideOnMobile{
+            display: none;
+        }
+        .HakAna{
+            margin: 10px;
+            grid-template-columns: repeat(1,1fr);
+        }
+    }
+    @media(max-width: 400px){
+        .sidebar{
+            width: 100%;
+        }
+    }
