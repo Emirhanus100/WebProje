@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    min-height: 100vh;
+    background-image: url(malatya2.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    font-family: 'Segoe UI','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+nav a:hover{
+    background-color: #f0f0f0;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.Ana
+{
+    margin-left: 500px;
+    margin-top: 50px;
+    width: 575px;
+    height: 650px;
+    background: red;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #efb37b, #e5c6aa, #efb37b);
+    border-radius: 50px;
+    box-shadow: 5px 20px 50px #000;
+}
+::-webkit-scrollbar{
+    width: 15px;
+    }
+    ::-webkit-scrollbar-track{
+    background: #d1e5ff;
+    border-radius: 35px;
+    }
+    
+    ::-webkit-scrollbar-thumb{
+    background: linear-gradient(#966022,#966022);
+    border-radius: 35px;
+    }
+#chk{
+    display: none;
+}
+.Giris{
+position: relative;
+width: 100%;
+height: 100%;
+}
+label{
+    color: white;
+    font-size: 2.3em;
+    justify-content: center;
+    display: flex;
+    margin: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+input{
+width: 65%;
+height: 20px;
+background: #e0dede;
+justify-content: center;
+display: flex;
+margin: 20px auto;
+padding: 10px;
+border: none;
+outline: none;
+border-radius: 30px;
+}
+button{    
+    width: 38%;
+    height: 40px;
+    margin: -40px;
+    margin-left: 45px;
+    justify-content: center; 
+    color: white;
+    background: #cf7d39;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    transition: .2s ease-in;
+    cursor: pointer;
+}
+textarea{
+    width: 65%;
+    height: 80px;
+    background: #e0dede;
+    justify-content: center;
+    display: flex;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    resize: none;
+}
+button:hover{
+    background: #6d44b8;
+}
+.input-box  .icon{
+    position: absolute;
+    right: 100px;
+    font-size: 1.1em;
+    color: #162938;
+    line-height: 45px;
+}
+.twittericon{
+    color:blue;
+    font-size: 30px;
+    padding-left: 253px;
+}
+.twittericon:hover{
+color: black;
+}
+
+@media(max-width: 1000px){
+    .hideOnMobile{
+        display: none;
+    }
+    .Ana{
+        margin-left: 100px;
+        width: 50%;
+        height: 50%;
+    }
+    .Giris{
+        margin-left: 100px;
+        width: 50%;
+        height: 50%;
+    }
+}
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
