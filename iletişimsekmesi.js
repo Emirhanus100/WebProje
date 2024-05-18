@@ -7,7 +7,8 @@ const mesaj = document.getElementById('mesaj');
 const errorElement = document.getElementById('error');
 
 Form.addEventListener('submit',(e)=>{
-    let mmessages = [];
+    let isValid = true;
+
 
     if(AD.value ===""|| AD.value ===null){
         alert('Ad boş olamaz!');
@@ -26,7 +27,7 @@ Form.addEventListener('submit',(e)=>{
         isValid = false;
     }
    if(isValid){
-    alert("Form Başaryla gönderildi");
+    alert("Form Başaryla gönderildi");//<form action="giriş.php" method="post" id="form">        
    }
         e.preventDefault()
         errorElement.innerText = messages.join(", ")

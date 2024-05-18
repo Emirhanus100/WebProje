@@ -12,7 +12,7 @@
         <ul class="sidebar">    
         <li onclick=hideSidebar()><a href='#'><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
         <li><a href='Şehrim.php'><ion-icon name="home-outline"></ion-icon>Ana Sayfa</a></li>
-        <li><a href='HAKKINDA.php'><ion-icon name="book-outline"></ion-icon>Hakkında</a></li>
+        <li><a href='Hakkındasekmesi.php'><ion-icon name="book-outline"></ion-icon>Hakkında</a></li>
         <li><a href='ilgialanısekmesi.php'><ion-icon name="telescope-outline"></ion-icon>İlgi Alanı</a></li>
         <li><a href='Mirasımız.php'><ion-icon name="location-outline"></ion-icon>MALATYA'NIN MİRASI</a></li>
         <li><a href='ŞehirTanıtım.php'><ion-icon name="images-outline"></ion-icon>Şehrim</a></li>
@@ -22,7 +22,7 @@
 <ul>
         <li><a href='#'>MİTA</a></li>
         <li class="hideOnMobile"><a href='Şehrim.php'>Ana Sayfa</a></li>
-        <li class="hideOnMobile"><a href='HAKKINDA.php'>Hakkında</a></li>
+        <li class="hideOnMobile"><a href='Hakkındasekmesi.php'>Hakkında</a></li>
         <li class="hideOnMobile"><a href='ilgialanısekmesi.php'>İlgi Alanı</a></li>
         <li class="hideOnMobile"><a href='Mirasımız.php'>MALATYA'NIN MİRASI</a></li>
         <li class="hideOnMobile"><a href='ŞehirTanıtım.php'>Şehrim</a></li>

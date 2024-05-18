@@ -8,27 +8,29 @@
     </head>
     <body>
         <body>
-            <nav>
-                  <ul class="sidebar">    
-                  <li onclick=hideSidebar()><a href='#'><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-                  <li><a href='Şehrim.php'>Ana Sayfa</a></li>
-                  <li><a href='HAKKINDA.php'>Hakkında</a></li>
-                  <li><a href='İlgialanı.php'>İlgi Alanı</a></li>
-                  <li><a href='Mirasımız.php'>MALATYA'NIN MİRASI</a></li>
-                  <li><a href='ŞehirTanıtım.php'>Şehrim</a></li>
-                  <li><a href='Özgecmis.php'>Özgeçmiş</a></li>
-          </ul>
-          <ul>
-                  <li><a href='#'>MİTA</a></li>
-                  <li class="hideOnMobile"><a href='Şehrim.php'>Ana Sayfa</a></li>
-                  <li class="hideOnMobile"><a href='HAKKINDA.php'>Hakkında</a></li>
-                  <li class="hideOnMobile"><a href='İlgialanı.php'>İlgi Alanı</a></li>
-                  <li class="hideOnMobile"><a href='Mirasımız.php'>MALATYA'NIN MİRASI</a></li>
-                  <li class="hideOnMobile"><a href='ŞehirTanıtım.php'>Şehrim</a></li>
-                  <li class="hideOnMobile"><a href='Özgecmis.php'>Özgeçmiş</a></li>
-                  <li onclick=showSidebar()><a href='#'><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-          </ul>
-            </nav>
+        <nav>
+        <ul class="sidebar">    
+        <li onclick=hideSidebar()><a href='#'><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href='Şehrim.php'><ion-icon name="home-outline"></ion-icon>Ana Sayfa</a></li>
+        <li><a href='Hakkındasekmesi.php'><ion-icon name="book-outline"></ion-icon>Hakkında</a></li>
+        <li><a href='ilgialanısekmesi.php'><ion-icon name="telescope-outline"></ion-icon>İlgi Alanı</a></li>
+        <li><a href='Mirasımız.php'><ion-icon name="location-outline"></ion-icon>MALATYA'NIN MİRASI</a></li>
+        <li><a href='ŞehirTanıtım.php'><ion-icon name="images-outline"></ion-icon>Şehrim</a></li>
+        <li><a href='Özgecmis.php'><ion-icon name="person-circle-outline"></ion-icon>Özgeçmiş</a></li>
+        <li><a href='İletişimsekmesi.php'><ion-icon name="call-outline"></ion-icon>İletişim</a></li>
+</ul>
+<ul>
+        <li><a href='#'>MİTA</a></li>
+        <li class="hideOnMobile"><a href='Şehrim.php'>Ana Sayfa</a></li>
+        <li class="hideOnMobile"><a href='Hakkındasekmesi.php'>Hakkında</a></li>
+        <li class="hideOnMobile"><a href='ilgialanısekmesi.php'>İlgi Alanı</a></li>
+        <li class="hideOnMobile"><a href='Mirasımız.php'>MALATYA'NIN MİRASI</a></li>
+        <li class="hideOnMobile"><a href='ŞehirTanıtım.php'>Şehrim</a></li>
+        <li class="hideOnMobile"><a href='Özgecmis.php'>Özgeçmiş</a></li>
+        <li class="hideOnMobile"><a href='İletişimsekmesi.php'>İletişim</a></li>
+        <li onclick=showSidebar()><a href='#'><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+</ul>
+  </nav>
             <div class="HakAna">
                 <input type="checkbox" id="chk" aria-hidden="true">                                     
                     <div class="solpanel">
@@ -131,18 +133,35 @@
                                 <span class="text">DEPO Paketleme / Avcılar Foodie Co.</span>
                             </li>
                             
-                        </ul>
-                        <div class="Tecrübe">
-                        <h3 class="başlık2">DİLLER</h3>
-                        <ul>
-                            <li>
-                                <span class="text">Türkçe</span>
-                            </li>
-                            <li>
-                                <span class="text">İngilizce</span>
-                            </li>
-                            
-                        </ul>
+                        </ul><br>
+          <div class="Diller">
+         <div class="dilliste">
+           <p class="başlık2">DİLLER</p> <br>
+         </div>
+         <ul>
+           <li>
+             <div class="programlamadili">
+               Türkçe
+             </div>
+             <div class="ilerlemeyüzdesi">
+               <span style="width: 80%;"></span>
+             </div>
+             <div class="ilerlemeyüz">80%</div>
+           </li>
+           <li>
+             <div class="programlamadili">
+               İngilizce
+             </div>
+             <div class="ilerlemeyüzdesi">
+               <span style="width: 65%;"></span>
+             </div>
+             <div class="ilerlemeyüz">65%</div>
+           </li>
+         </ul>
+       </div>
+                    </div>
+
+                       
                         <div class="Tecrübe">
                         <h3 class="başlık2">BECERİLERİ</h3>
                         <ul>
@@ -160,6 +179,8 @@
                     </div>
                     </div>                                 
             </div>
+            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
             <script>
     function showSidebar(){
         const sidebar = document.querySelector('.sidebar')

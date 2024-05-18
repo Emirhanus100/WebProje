@@ -164,19 +164,30 @@ button:hover{
 color: black;
 }
 
-@media(max-width: 1000px){
-    .hideOnMobile{
+@media(max-width: 1000px) {
+    .hideOnMobile {
         display: none;
     }
-    .Ana{
-        margin-left: 100px;
-        width: 50%;
-        height: 50%;
+    .Ana {
+        margin-left: 200px; /* Sola taşımak için */
+        width: 90%;
+        height: auto;
     }
-    .Giris{
-        margin-left: 100px;
-        width: 50%;
-        height: 50%;
+    .Giris {
+        margin-left: 0;
+        width: 100%;
+        height: auto;
+    }
+    .input-box input,
+    .input-box textarea,
+    .Giris .input-box button { /* Button'u sadece Giris içindeki input-box'tan seç */
+        width: 90%;
+        margin-left: 5%; /* Sola taşımak için */
+    }
+    .twittericon {
+        padding-left: 0;
+        text-align: center;
+        display: block;
     }
 }
 @media(max-width: 400px){

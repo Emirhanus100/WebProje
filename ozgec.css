@@ -233,9 +233,43 @@ nav li:first-child{
             color: #000;
             font-weight: 300;
         }
-    @media(max-width: 800px){
+        .Diller p{
+            color: #302b63;
+        }
+        .Diller ul li {
+            display: flex;
+            margin-bottom: 10px;
+            color: #000;
+            justify-content: space-between;
+            align-items: center;
+          }
+          .Diller ul li .programlamadili{
+            width: 25%;
+          }
+          .Diller ul li .ilerlemeyüzdesi{
+            width: 60%;
+            margin: 0 5px;
+            height: 5px;
+            background: #009fd9;
+            position: relative;
+          }
+          .Diller ul li .ilerlemeyüz{
+            width: 15%;
+          }
+          .Diller ul li .ilerlemeyüzdesi span{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background: #c00c0c;
+          }
+    @media(max-width: 1000px){
         .hideOnMobile{
             display: none;
+        }
+        .HakAna{
+            margin: 10px;
+            grid-template-columns: repeat(1,1fr);
         }
     }
     @media(max-width: 400px){

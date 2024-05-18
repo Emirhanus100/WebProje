@@ -16,13 +16,13 @@ if($_POST)
     }
     else
     {
-        header("Location: LoginEkranı.php");     
+        header("Location: Şehrim.php");     
     }
     }
     else  
     {
         echo"İşlem Gerçekleşemedi. Giriş sayfasına yönlendiriliyorsunuz";
-        header("Location: LoginEkranı.php");     
+        header("Location: Şehrim.php");     
     }
 }               // Aşşağıda Link Giriş ekranına değil direkt sayfaya götürsün zaten başarısız olduğunda geri logine gönderiyor
 
@@ -32,7 +32,7 @@ if($_POST)
 </head>
 <body>
     <br>
-    //<a href="LoginEkranı.php">Giriş Ekranı</a> 
+    //<a href="Şehrim.php">Giriş Ekranı</a> 
 </body>
 </html>
 

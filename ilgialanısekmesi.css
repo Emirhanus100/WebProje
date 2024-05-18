@@ -209,36 +209,7 @@ nav li:first-child{
         color: #fff;
         font-weight: 300;
     }
-    .yetenekler p{
-        color: #fff;
-    }
-    .yetenekler ul li {
-        display: flex;
-        margin-bottom: 10px;
-        color: #b1eaff;
-        justify-content: space-between;
-        align-items: center;
-      }
-      .yetenekler ul li .programlamadili{
-        width: 25%;
-      }
-      .yetenekler ul li .ilerlemeyüzdesi{
-        width: 60%;
-        margin: 0 5px;
-        height: 5px;
-        background: #009fd9;
-        position: relative;
-      }
-      .yetenekler ul li .ilerlemeyüz{
-        width: 15%;
-      }
-      .yetenekler ul li .ilerlemeyüzdesi span{
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        background: #fff;
-      }
+    
       .Tecrübe{
         padding-top: 40px;
         }
