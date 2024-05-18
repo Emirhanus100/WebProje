@@ -23,7 +23,7 @@
   </nav>
 
 
-  <div class ="hideOnMobile">
+  
   <div class="Ana">
         <input type="checkbox" id="chk" aria-hidden="true">         
     <div class="Giris">
